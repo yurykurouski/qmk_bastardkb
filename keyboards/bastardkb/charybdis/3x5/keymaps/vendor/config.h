@@ -26,6 +26,21 @@
 #    define NO_ACTION_ONESHOT
 #endif // __arm__
 
+#ifdef AUTO_MOUSE_DEFAULT_LAYER
+#undef AUTO_MOUSE_DEFAULT_LAYER
+#endif
+#define AUTO_MOUSE_DEFAULT_LAYER 4
+
+#ifdef LED_DPI_INDICATOR_INDEX
+#undef LED_DPI_INDICATOR_INDEX
+#endif
+#define LED_DPI_INDICATOR_INDEX 0
+
+#ifdef RGBLIGHT_LED_COUNT
+#undef RGBLIGHT_LED_COUNT
+#endif
+#define RGBLIGHT_LED_COUNT 36
+
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE
